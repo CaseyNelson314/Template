@@ -30,17 +30,16 @@ R sum(T... param) {
 //引数の数を求める(ポインタ×)
 template<typename... T>
 uint16_t countParam(T...param) {
-  uint8_t array[] = {static_cast<uint8_t>(param)...};
-  return sizeof(array);
+  return sizeof...(param);
 }
-
 
 
 //{}内に引数の値を入れたい！
 //ex: print("値は{}です\n", 10); => 値は10です
 template<typename... T>
 void print(const String &str, T... param) {
-  
-  Serial.print(str);
-  
+
+//  for (uint8_t i = 0; i < sizeof...(param); i++)
+//    Serial.print(param + ... + i);
+
 }
