@@ -1,5 +1,5 @@
 //可変長引数実験
-#include "olib.h"
+#include "Template.h"
 
 
 template<typename... T>
