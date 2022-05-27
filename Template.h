@@ -55,7 +55,7 @@ R sum(T... param) {
 /**
  * @brief  引数の個数を求める
  * @tparam 自動
- * @param  調べる引数
+ * @tparam 調べる引数
  * @return 引数個数
  */
 template <typename... T>
